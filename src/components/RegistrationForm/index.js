@@ -79,6 +79,10 @@ class RegistrationForm extends Component {
 
   renderForm = () => {
     const {firstnameErrMsg, lastNameErrMsg, firstName, lastName} = this.state
+    const FirstNameinputFieldClassName =
+      firstnameErrMsg !== '' ? 'input-field error-input-field' : 'input-field'
+    const lastNameinputFieldClassName =
+      lastNameErrMsg !== '' ? 'input-field error-input-field' : 'input-field'
     return (
       <>
         <form onSubmit={this.onSubmitForm}>
@@ -88,7 +92,7 @@ class RegistrationForm extends Component {
             </label>
             <input
               type="text"
-              className="input-field"
+              className={FirstNameinputFieldClassName}
               id="firstName"
               placeholder="First name"
               onChange={this.onChangeFirstName}
@@ -103,7 +107,7 @@ class RegistrationForm extends Component {
             </label>
             <input
               type="text"
-              className="input-field"
+              className={lastNameinputFieldClassName}
               id="lastName"
               placeholder="Last name"
               onChange={this.onChangeLastName}
