@@ -1,0 +1,117 @@
+.registration-form-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.main-heading {
+  color: #ea580c;
+  font-size: 30px;
+  font-weight: 600;
+}
+.content-container {
+  width: 100%;
+  max-width: 350px;
+  margin-top: 15px;
+
+  padding: 60px 0px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 15px;
+  width: 100%;
+}
+.registration-label {
+  color: #475569;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.input-field {
+  border: 1px solid #cbd2d9;
+  color: #9aa5b1;
+  padding: 8px 16px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.submit-btn {
+  width: 100%;
+  color: #ffffff;
+  background-color: #ea580c;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 6px 0px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.error-msg {
+  margin: 0px;
+  color: #ff0b37;
+  font-size: 14px;
+  font-weight: 500;
+}
+.error-input-field {
+  background-color: #fef2f4;
+  border: 1px solid #ff0b37;
+}
+..success-img {
+  width: 50px;
+}
+.on-success-msg {
+  color: #475569;
+  font-size: 147x;
+  font-weight: 600;
+}
+.submit-another-response-btn {
+  width: 100%;
+  background-color: #ea580c;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 0px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .content-container {
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    padding: 60px 40px;
+    max-width: 400px;
+  }
+  .submit-btn {
+    width: auto;
+    padding: 7px 13px;
+    align-self: center;
+  }
+  .submit-another-response-btn {
+    width: auto;
+    padding: 7px 13px;
+    align-self: center;
+  }
+}
